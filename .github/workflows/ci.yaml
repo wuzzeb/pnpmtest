@@ -9,7 +9,7 @@ jobs:
       - uses: wuzzeb/action-setup@master
         id: pnpmsetup
         with:
-          version: "6.14.7"
+          version: "6.14.6"
 
       - run: ls "${{ steps.pnpmsetup.outputs.bin_dest }}"
 
