@@ -5,7 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - uses: wuzzeb/action-setup@master
-      - run: which pnpm
+        id: pnpmsetup
+
+      - run: echo "${ steps.pnpmsetup.outputs.bin_dest }"
+
       - run: pnpm --version
 
