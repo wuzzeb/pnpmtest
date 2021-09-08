@@ -9,7 +9,7 @@ jobs:
       - uses: wuzzeb/action-setup@master
         id: pnpmsetup
 
-      - run: echo "${ steps.pnpmsetup.outputs.bin_dest }"
+      - run: echo "${{ steps.pnpmsetup.outputs.bin_dest }}"
 
       - run: pnpm --version
 
