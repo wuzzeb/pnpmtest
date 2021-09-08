@@ -11,7 +11,5 @@ jobs:
 
       - run: ls "${{ steps.pnpmsetup.outputs.bin_dest }}"
 
-      - run: echo $PATH
-
       - run: pnpm --version
 
